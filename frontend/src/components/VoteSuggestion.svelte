@@ -87,6 +87,8 @@
     }
 
     function motivationalText(majorityPercent) {
+        majorityPercent = parseFloat(majorityPercent);
+
         if (majorityPercent > 0.15) {
             return randomChoice([
                 'A comfortable lead but please make sure you register and get out there on polling day regardless.',
@@ -107,26 +109,20 @@
                 "We're so close to winning this! Please be sure to go and vote. Tell your friends.",
             ]);
         }
-        if (majorityPercent <= -0.01) {
+        if (majorityPercent > -0.05) {
             return randomChoice([
                 'This is well within reach! Forward this on to all you can, make sure they are registered to vote and bring them with you on polling day.',
-            ]);
-        }
-        if (majorityPercent < -0.05) {
-            return randomChoice([
                 'A significant gap, but it can still be overcome if you make sure all your friends and family are registered and vote on the day!',
             ]);
         }
-        if (majorityPercent < -0.1) {
+        if (majorityPercent > -0.1) {
             return randomChoice([
                 "This will require some serious work to kick the Tories out, but don't despair, it can still be done! Tell everyone you can to get out and vote!",
             ]);
         }
-        if (majorityPercent < -0.2) {
-            return randomChoice([
-                'This constituency may be a lost cause, but please still vote, and tell your friends who live elsewhere to do the same. Unfortunately your vote has and will continue to be totally unrepresented in parliament.',
-            ]);
-        }
+        return randomChoice([
+            'This constituency may be a lost cause, but please still vote, and tell your friends who live elsewhere to do the same. Unfortunately your vote has and will continue to be totally unrepresented in parliament.',
+        ]);
     }
 </script>
 
@@ -161,8 +157,8 @@
         </h1>
         <p>
             In 2017, in your constituency ({suggestion.constituency}), the
-            Conservatives {suggestion.majority > 0 ? 'were defeated' : 'won'} by
-            {suggestion.majority} votes ({(suggestion.majorityPercent * 100).toFixed(1)}%
+            Conservatives {parseInt(suggestion.majority) > 0 ? 'were defeated' : 'won'}
+            by {Math.abs(parseInt(suggestion.majority))} votes ({Math.abs(suggestion.majorityPercent * 100).toFixed(1)}%
             of those who voted).
         </p>
         <p>{motivationalText(suggestion.majorityPercent)}</p>

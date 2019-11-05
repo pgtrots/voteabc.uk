@@ -26,6 +26,7 @@
 
     h3 {
         font-size: 1em;
+        padding: 0.75em 0em 0.75em 0em;
     }
 </style>
 
