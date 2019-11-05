@@ -65,15 +65,13 @@
         },
         'Sylvia Hermon': {
             type: 'jpg',
-            src:
-                'https://en.wikipedia.org/wiki/Sylvia_Hermon#/media/File:Official_portrait_of_Lady_Hermon_crop_2.jpg',
+            src: '/images/Silvia_Hermon.jpg',
             text: 'Sylvia Hermon',
             color: colours.abcGrey,
         },
         'Dominic Grieve': {
             type: 'jpg',
-            src:
-                'https://en.wikipedia.org/wiki/Dominic_Grieve#/media/File:Official_portrait_of_Mr_Dominic_Grieve_crop_2.jpg',
+            src: '/images/Dominic_Grieve.jpg',
             text: 'Dominic Grieve',
             color: colours.abcGrey,
         },
@@ -133,11 +131,10 @@
 
     svg,
     img {
-        width: 100%;
         margin: 0 1em 1em 1em;
-        max-width: calc(100% - 2em);
-        min-height: 35vh;
-        max-height: 50vh;
+        box-sizing: border-box;
+        width: 90%;
+        max-width: 40em;
     }
 
     p {
