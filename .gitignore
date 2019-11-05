@@ -1,0 +1,13 @@
+data/*
+.~lock
+
+target/
+Cargo.lock
+
+node_modules/
+
+docker/
+__package__/
+ansible/
+*.pem
+start.sh

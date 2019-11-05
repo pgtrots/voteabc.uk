@@ -1,0 +1,21 @@
+[Unit]
+Description=VoteABC Server
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+Environment=PORT=80
+Environment=SSL_PORT=443
+Environment=KEY_FILE=/home/voteabc/.acme.sh/voteabc.uk/voteabc.uk.key
+Environment=CERT_FILE=/home/voteabc/.acme.sh/voteabc.uk/voteabc.uk.cer
+Environment=STATIC_PATH=/home/voteabc/voteabc/static
+Environment=DB_PATH=/home/voteabc/voteabc/voteabc.db
+Environment=RUST_LOG=info
+ExecStart=/bin/sh -c "exec /home/voteabc/voteabc/voteabc-server >> /home/voteabc/log/stdout.log 2>> /home/voteabc/log/error.log"
+
+[Install]
+WantedBy=multi-user.target
