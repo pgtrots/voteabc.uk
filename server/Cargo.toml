@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 actix-web = { version = "^1", features = ["rust-tls"] }
+actix-web-middleware-redirect-https = "0.1.0"
 actix-rt = "0.2.5"
 actix-files = "0.1.6"
 actix-threadpool = "0.1.2"

@@ -1,13 +1,11 @@
-mod redirect_to_https;
-
 use actix_files::Files;
 use actix_threadpool::BlockingError;
 use actix_web::{middleware, web, App, Error, HttpResponse, HttpServer};
+use actix_web_middleware_redirect_https::RedirectHTTPS;
 use futures::Future;
 use log::error;
 use r2d2::Pool;
 use r2d2_sqlite::SqliteConnectionManager;
-use redirect_to_https::RedirectHTTPS;
 use rusqlite;
 use rustls::{
     internal::pemfile::{certs, rsa_private_keys},
@@ -101,7 +99,7 @@ fn main() -> io::Result<()> {
     config.set_single_cert(cert_chain, keys.remove(0)).unwrap();
 
     // Redirect
-    let redirect_middleware = RedirectHTTPS::with_replace_host(&port, &ssl_port);
+    let redirect_middleware = RedirectHTTPS::with_replacements(&[(port.clone(), ssl_port.clone())]);
 
     // HTTP server
     HttpServer::new(move || {
