@@ -110,10 +110,14 @@
         if (majorityPercent > -0.05) {
             return randomChoice([
                 'This is well within reach! Forward this on to all you can, make sure they are registered to vote and bring them with you on polling day.',
-                'A significant gap, but it can still be overcome if you make sure all your friends and family are registered and vote on the day!',
             ]);
         }
         if (majorityPercent > -0.1) {
+            return randomChoice([
+                'A significant gap, but it can still be overcome if you make sure all your friends and family are registered and vote on the day!',
+            ]);
+        }
+        if (majorityPercent > -0.2) {
             return randomChoice([
                 "This will require some serious work to kick the Tories out, but don't despair, it can still be done! Tell everyone you can to get out and vote!",
             ]);
