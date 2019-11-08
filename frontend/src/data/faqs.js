@@ -66,4 +66,53 @@ and strife as the UK seeks to renegotiate all the trade agreements it will have 
 <p>Leaving the EU is not the end of Brexit, it is only the end of the beginning.</p>
             `,
     },
+    {
+        title:
+            'I just can\'t bring myself to vote for Labour with Corbyn in charge.',
+        body: `
+<div style="margin-left: 4em; width: 50%; text-align: justify;">
+<p>I won't vote for Labour<br />
+not while that persons still in charge,<br />
+I'd rather lose the NHS<br />
+and let the Tories live it large.</p>
+<p>I won't vote for Labour,<br />
+I've got to think about my pride,<br />
+I'd rather the homeless filled the streets,<br />
+with no place for them to hide.</p>
+<p>I won't vote for Labour,<br />
+while their leaders still in town,<br />
+I'd rather see school funding cut<br />
+...while others get shut down.</p>
+<p>I won't vote for Labour,<br />
+not while he's in charge, no thanks,<br />
+I'd rather wait around the block,<br />
+just to queue for the food banks.</p>
+<p>I won't vote for Labour,<br />
+I think he's a disgrace,<br />
+I'd rather work zero hours...<br />
+getting exploited in the workplace.</p>
+<p>I won't vote for Labour,<br />
+even though the country's on its knees.<br />
+I'd rather see the colour sucked<br />
+...from all our communities.</p>
+<p>I won't vote for Labour,<br />
+I'm only telling you the truth,<br />
+I'd rather the rich got taxed for less,<br />
+while I pay through the roof.</p>
+<p>I won't vote for Labour,<br />
+I'm determined to stick it through,<br />
+I'd rather scrap my socialist values,<br />
+shitting on the many, for the few.</p>
+<p>Well there you are, you've had your say<br />
+and you've hung him out to dry,<br />
+been duped by media spin doctors<br />
+...when he's covered in alibis.</p>
+<p>I gave you the benefit of doubt...<br />
+but your reasons, I cannot find,<br />
+I'd rather put an 'X' in Labours box<br />
+...than have a narrow mind.</p>
+<p style="text-align: right;">~ Mitch Fletcher (<a href="https://www.reddit.com/r/unitedkingdom/comments/dsx262/wont_vote_labour/">/u/javaxcore</a>)
+</div>
+        `,
+    },
 ];

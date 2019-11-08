@@ -19,8 +19,12 @@
     section {
         width: calc(100% - 4em);
         margin: 0 2em;
+        margin-top: 1em;
         box-sizing: border-box;
         text-align: right;
+    }
+
+    span {
     }
 
     a {
