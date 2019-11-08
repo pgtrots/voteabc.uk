@@ -66,7 +66,8 @@
         flex-direction: row;
         justify-content: center;
         font-size: inherit;
-        margin-bottom: 1em;
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
 
     input {

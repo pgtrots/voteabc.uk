@@ -18,7 +18,7 @@
         color: #333;
         display: flex;
         flex-direction: column;
-        max-width: 960px;
+        max-width: 760px;
         background-color: white;
         padding: 0;
         margin: 0 auto;

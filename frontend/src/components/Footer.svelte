@@ -6,6 +6,7 @@
         color: #fff;
         text-align: right;
         box-sizing: border-box;
+        border-radius: 1em 1em 0 0;
     }
 
     p {
