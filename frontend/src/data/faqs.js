@@ -119,7 +119,7 @@ I'd rather put an 'X' in Labours box<br />
         title: 'Who are you, and why did you make this?',
         body: `
 <p>
-I'm just someone who hates the Tories and had enough time to put this together. The goal is to do what I can to maximise the chance of a Conservative defeat, which would be a terrible outcome for the country - and for me. No data is collected apart from standard server logs recording the endpoints accessed, and there is no way for us to track users on this site. If you doubt this at all, you can check the <a href="https://github.com/pgtrots/voteabc.uk">source code</a> for this website yourself.</p>
+I'm just someone who hates the Tories and had enough time to put this together. The goal is to do what I can to maximise the chance of a Conservative defeat, since a Tory victory would be a terrible outcome for the country - and for me. No data is collected apart from standard server logs recording the endpoints accessed, and there is no way for us to track users on this site. If you doubt this at all, you can check the <a href="https://github.com/pgtrots/voteabc.uk">source code</a> for this website yourself.</p>
         `,
     },
 ];
