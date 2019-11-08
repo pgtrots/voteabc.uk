@@ -2,6 +2,7 @@
     import LoadingBar from '../components/LoadingBar.svelte';
     import PostcodeInput from '../components/PostcodeInput.svelte';
     import VoteSuggestion from '../components/VoteSuggestion.svelte';
+    import Sharing from '../components/Sharing.svelte';
     import InformationSection from '../components/InformationSection.svelte';
     import Footer from '../components/Footer.svelte';
 
@@ -29,13 +30,14 @@
 </style>
 
 <svelte:head>
-    <title>VoteABC</title>
+    <title>VoteABC: Anything But Conservative</title>
 </svelte:head>
 
 <main>
     <LoadingBar {loading} />
     <PostcodeInput bind:loading bind:suggestion />
     <VoteSuggestion {suggestion} />
+    <Sharing {suggestion} />
     <InformationSection />
     <Footer />
 </main>
