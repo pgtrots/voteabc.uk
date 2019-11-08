@@ -70,7 +70,7 @@ and strife as the UK seeks to renegotiate all the trade agreements it will have 
         title:
             'I just can\'t bring myself to vote for Labour with Corbyn in charge.',
         body: `
-<div style="margin-left: 4em; width: 50%; text-align: justify;">
+<div style="margin-left: 2em; text-align: justify;">
 <p>I won't vote for Labour<br />
 not while that persons still in charge,<br />
 I'd rather lose the NHS<br />
@@ -113,6 +113,13 @@ I'd rather put an 'X' in Labours box<br />
 ...than have a narrow mind.</p>
 <p style="text-align: right;">~ Mitch Fletcher (<a href="https://www.reddit.com/r/unitedkingdom/comments/dsx262/wont_vote_labour/">/u/javaxcore</a>)
 </div>
+        `,
+    },
+    {
+        title: 'Who are you, and why did you make this?',
+        body: `
+<p>
+I'm just someone who hates the Tories and had enough time to put this together. The goal is to do what I can to maximise the chance of a Conservative defeat, which would be a terrible outcome for the country - and for me. No data is collected apart from standard server logs recording the endpoints accessed, and there is no way for us to track users on this site. If you doubt this at all, you can check the <a href="https://github.com/pgtrots/voteabc.uk">source code</a> for this website yourself.</p>
         `,
     },
 ];

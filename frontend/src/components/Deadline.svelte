@@ -13,7 +13,6 @@
         padding: 1em;
         text-align: center;
         border: 1px solid black;
-        box-sizing: border-box;
     }
 
     div.urgent {
