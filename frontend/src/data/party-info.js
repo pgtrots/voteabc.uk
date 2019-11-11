@@ -73,4 +73,10 @@ export default {
         text: 'Lindsay Hoyle',
         color: colours.abcGrey,
     },
+    'Anna Soubry': {
+        type: 'jpg',
+        src: '/images/Anna_Soubry.jpg',
+        text: 'Anna Soubry',
+        color: colours.abcGrey,
+    },
 };
