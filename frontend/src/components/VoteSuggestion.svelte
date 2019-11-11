@@ -5,15 +5,37 @@
     export let suggestion;
 
     function validateSuggestion(suggestion) {
-        return suggestion.party !== undefined;
         return (
             suggestion.postcode !== undefined &&
             suggestion.constituency !== undefined &&
             suggestion.party !== undefined &&
+            suggestion.source !== undefined &&
             suggestion.majority !== undefined &&
             suggestion.majorityPercent !== undefined &&
             true
         );
+    }
+
+    let dataSource;
+    $: switch (suggestion.source) {
+        case '2017 Election': {
+            dataSource = {
+                href: `https://en.wikipedia.org/wiki/${suggestion.constituency}_(UK_Parliament_constituency)`,
+                body: '2017 Election closest competitor',
+            };
+            break;
+        }
+        case 'Best For Britain': {
+            dataSource = {
+                href: 'https://getvoting.org',
+                body: 'Best for Britain MRP',
+            };
+            break;
+        }
+        default: {
+            dataSource = undefined;
+            break;
+        }
     }
 </script>
 
@@ -60,5 +82,11 @@
         <p>
             {@html motivationalText(suggestion)}
         </p>
+        {#if dataSource}
+            <p>
+                Data Source:
+                <a href={dataSource.href}>{dataSource.body}</a>
+            </p>
+        {/if}
     {/if}
 </section>

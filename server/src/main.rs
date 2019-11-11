@@ -19,6 +19,7 @@ pub struct VoteSuggestion {
     pub postcode: String,
     pub constituency: String,
     pub party: String,
+    pub source: String,
     pub majority: i32,
     #[serde(rename = "majorityPercent")]
     pub majority_percent: f64,
@@ -38,11 +39,12 @@ fn api(
 
         let conn = db.get().unwrap();
         let mut stmt = conn.prepare_cached("\
-        SELECT postcode, constituencies.name, parties.name, majority, majority_percent \
+        SELECT postcode, constituencies.name, parties.name, suggestions_sources.name, majority, majority_percent \
         FROM postcodes \
             LEFT JOIN constituencies ON postcodes.constituency_id=constituencies.id \
             LEFT JOIN vote_suggestions ON postcodes.constituency_id=vote_suggestions.constituency_id \
             LEFT JOIN parties ON vote_suggestions.party_id=parties.id \
+            LEFT JOIN suggestions_sources ON vote_suggestions.source_id=suggestions_sources.id \
         WHERE postcode=$1 \
             ")?;
         let postcode = path.replace(" ", "").to_uppercase();
@@ -51,8 +53,9 @@ fn api(
                 postcode: row.get(0)?,
                 constituency: row.get(1)?,
                 party: row.get(2)?,
-                majority: row.get(3)?,
-                majority_percent: row.get(4)?,
+                source: row.get(3)?,
+                majority: row.get(4)?,
+                majority_percent: row.get(5)?,
             })
         })
     })

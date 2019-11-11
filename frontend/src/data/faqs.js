@@ -7,6 +7,8 @@ export default [
 <p>
 <b>Cruelty</b>
 <ul>
+<li><a href="https://fullfact.org/health/130000-preventable-deaths-austerity/">[Full Fact] Tory Austerity linked to 130,000 preventable deaths in the UK</a></li>
+<li><a href="https://www.huffingtonpost.co.uk/entry/tory-mp-candidate-said-women-should-keep-their-knickers-on-during-rape-discussion_uk_5dc350bbe4b0d8eb3c8f45ff?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL3VrcG9saXRpY3MvY29tbWVudHMvZHN3OHVqL3RvcnlfbXBfY2FuZGlkYXRlX3NhaWRfd29tZW5fc2hvdWxkX2tlZXBfdGhlaXIv&guce_referrer_sig=AQAAAK7LYgSBCI351pkjijUZwkRLbe0CPh5fnYKBqUm-pXMx5aJo8fu49SRDc-O2iJY_mB3dcKeJbauLcAV0CGKslEDv_Pw1NtEJAEo3bk9eGGWRZ7UgWXPrs-jwkfGcuyKKWDEVkbtOe1zPCclTsbkavLJafANbmduQnKM08RLy16Go">[Huffington Post] Tory MP Candidate Said Women Should 'Keep Their Knickers On' During Rape Discussion</a></li>
 <li><a href="https://www.youtube.com/watch?v=K2sXdZnkpis">[LBC] Jacob Rees-Mogg suggests Grenfell tower victims lacked the common sense to save themselves</a></li>
 <li><a href="https://amp.theguardian.com/politics/2019/nov/03/tory-candidate-francesca-obrien-wrote-people-benefits-street-should-be-put-down?__twitter_impression=true">[The Guardian] Conservative MP candidate states that those on "Benefits Street" should be "put down"</a></li>
 <li><a href="https://www.bbc.co.uk/news/uk-politics-45083275">[BBC] Boris Johnson describes Muslim burqa-wearing women as "looking like letter-boxes"</a></li>
@@ -22,6 +24,7 @@ export default [
 </p>
 <b>Self-interest and corruption</b>
 <ul>
+<li><a href="https://www.businessinsider.com/boris-johnson-blocked-russian-interference-report-kremlin-link-conservative-donors-2019-11?r=US&IR=T">[Business Insider] Boris Johnson is suspected of blocking a report on Russian interference in UK elections because of 'embarrassing' revelations about Kremlin links to Conservative donors</a></li>
 <li><a href="https://www.independent.co.uk/voices/brexit-preparation-boris-johnson-100m-ad-campaign-teachers-climate-change-a9129171.html">[The Independent] Boris Johnson wastes £100m of public money on Brexit ad campaign</a></li>
 <li><a href="https://www.newstatesman.com/politics/staggers/2017/11/here-why-priti-patel-s-undisclosed-trip-israel-so-bad">[New Statesman] Priti Patel disgraced after secret meetings with senior Israeli figures leading to an increase in foreign aid to Israel</a></li>
 <li><a href="https://www.independent.co.uk/news/uk/politics/boris-johnson-news-jennifer-arcuri-grant-cyber-evidence-us-a9180021.html">[The Independent] £100,000 grant awarded to Boris Johnson's friend Jennifer Arcuri deemed 'appropriate'</a></li>

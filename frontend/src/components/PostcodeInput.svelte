@@ -31,19 +31,35 @@
                 .replace(' ', '')
                 .toUpperCase();
 
-        loading = true;
-        const res = await fetch(url);
-        if (!res.ok) {
-            invalid = true;
-            invalidMessage =
-                res.status === 404
-                    ? DEFAULT_INVALID_MESSAGE
-                    : 'An error occurred, please try again later...';
-            loading = false;
-            return;
-        }
-        suggestion = await res.json();
-        loading = false;
+        suggestion = {
+            postcode: 'WD31LQ',
+            constituency: 'South West Hertfordshire',
+            party: 'David Gauke',
+            source: 'Best For Britain',
+            majority: -19550,
+            majorityPercent: -0.322325359009447,
+        };
+
+        /* loading = true; */
+        /* try { */
+        /*     const res = await fetch(url); */
+        /*     if (!res.ok) { */
+        /*         if (res.status === 404) { */
+        /*             invalid = true; */
+        /*             invalidMessage = DEFAULT_INVALID_MESSAGE; */
+        /*             loading = false; */
+        /*             return; */
+        /*         } else { */
+        /*             throw new Error(res.statusText); */
+        /*         } */
+        /*     } */
+        /*     suggestion = await res.json(); */
+        /* } catch (e) { */
+        /*     console.error(e); */
+        /*     invalid = true; */
+        /*     invalidMessage = 'An error occurred, please try again later...'; */
+        /* } */
+        /* loading = false; */
     }
 </script>
 

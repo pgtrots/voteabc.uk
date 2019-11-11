@@ -49,16 +49,28 @@ export default {
         text: 'Claire Wright',
         color: colours.abcGrey,
     },
-    'Sylvia Hermon': {
-        type: 'jpg',
-        src: '/images/Silvia_Hermon.jpg',
-        text: 'Sylvia Hermon',
-        color: colours.abcGrey,
-    },
     'Dominic Grieve': {
         type: 'jpg',
         src: '/images/Dominic_Grieve.jpg',
         text: 'Dominic Grieve',
+        color: colours.abcGrey,
+    },
+    'David Gauke': {
+        type: 'jpg',
+        src: '/images/David_Gauke.jpg',
+        text: 'David Gauke',
+        color: colours.abcGrey,
+    },
+    'Gavin Shuker': {
+        type: 'jpg',
+        src: '/images/Gavin_Shuker.jpg',
+        text: 'Gavin Shuker',
+        color: colours.abcGrey,
+    },
+    'Lindsay Hoyle': {
+        type: 'jpg',
+        src: '/images/Lindsay_Hoyle.jpg',
+        text: 'Lindsay Hoyle',
         color: colours.abcGrey,
     },
 };
