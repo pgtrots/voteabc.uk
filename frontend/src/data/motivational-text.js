@@ -5,6 +5,14 @@ function randomChoice(array) {
 export default function motivationalText(suggestion) {
     let majorityPercent = parseFloat(suggestion.majorityPercent);
 
+    if (suggestion.constituency === 'Uxbridge and South Ruislip') {
+        return 'This is Boris Johnson\'s constituency, you simply MUST go and vote against him! Tell literally everyone you can, the seat can be destabilised enough to oust him, which would be wonderful.';
+    }
+
+    if (suggestion.constituency === 'Chorley') {
+        return 'It literally doesn\'t matter how you\'d like to vote - your MP is the speaker of the House of Commons and therefore is traditionally unopposed. This means your vote has a 0% chance of counting possibly for the next 10 years. You can honestly not bother on election day, unless you wish to vote to protest the point.';
+    }
+
     if (majorityPercent > 0.15) {
         return randomChoice([
             'A comfortable lead but please make sure you register and get out there on polling day regardless.',
