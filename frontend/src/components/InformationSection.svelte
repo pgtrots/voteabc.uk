@@ -55,15 +55,6 @@
 <section>
     <hr />
     <Deadline text="Polling day" date="2019-12-12" urgency="urgent" />
-    <div class="emergency">
-        <a href="https://www.gov.uk/register-to-vote" target="_blank">
-            Register to vote
-        </a>
-    </div>
-    <Deadline
-        text="Registration deadline"
-        date="2019-11-26"
-        urgency="critical" />
     {#each FAQs as question}
         <Question {question} />
     {/each}
