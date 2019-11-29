@@ -70,7 +70,7 @@ export default {
     'Lindsay Hoyle': {
         type: 'jpg',
         src: '/images/Lindsay_Hoyle.jpg',
-        text: 'Lindsay Hoyle',
+        text: 'Sir Lindsay Hoyle',
         color: colours.abcGrey,
     },
     'Anna Soubry': {
@@ -78,5 +78,29 @@ export default {
         src: '/images/Anna_Soubry.jpg',
         text: 'Anna Soubry',
         color: colours.abcGrey,
+    },
+    'Scottish Labour': {
+        type: 'svg',
+        src: '/logos/Labour_Party_logo_notext.svg',
+        text: 'Scottish Labour',
+        color: colours.abcRed,
+    },
+    'Scottish Liberal Democrats': {
+        type: 'svg',
+        src: '/logos/Liberal_Democrats_logo_notext.svg',
+        text: 'the Scottish Liberal Democrats',
+        color: colours.abcYellow,
+    },
+    LibLab: {
+        type: 'svg',
+        src: '/logos/LabLib_logo_notext.svg',
+        text: 'Labour OR the Liberal Democrats',
+        color: colours.abcPurple,
+    },
+    any: {
+        type: 'svg',
+        src: '/logos/vote_abc_thorns.svg',
+        text: 'anyone but the Conservatives!',
+        color: colours.abcPurple,
     },
 };
